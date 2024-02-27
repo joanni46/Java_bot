@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories{
+	mavenCentral()
+}
+
+mainClassName = "ru.betry.App"
+
+dependencies {
+	implementation group: 'com.github.pengrad', name: 'java-telegram-bot-api', version: '7.1.0'
+	implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.3.0'
+}
+
